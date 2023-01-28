@@ -27,6 +27,8 @@
         methods: {
             createPost(post) {
                 this.$store.dispatch('createPost', post);
+                post.title = '';
+                post.content = '';
             }
         },
         computed: {
